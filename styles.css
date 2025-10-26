@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.todo-list {
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.6);
+
+  opacity: 0;
+  transform: translateY(-15px);
+  animation: fadeDown 0.5s ease-out forwards;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px); /* start slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* end in original position */
+  }
+}
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.todo-list > li {
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: darkcyan;
+  margin-left: 25px;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: blue;
+}
+a:focus {
+  outline: red;
+}
+a:active {
+  color: green;
+}
