@@ -43,6 +43,15 @@ h1 {
 }
 .todo-list > li {
   margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateX(0);
+  transition: 0.3s;
+}
+
+.todo-list > li:hover {
+  background-color: rgb(236, 236, 236);
+  transform: translateX(30px);
 }
 a {
   text-decoration: none;
