@@ -70,3 +70,8 @@ a:focus {
 a:active {
   color: green;
 }
+@media (max-width: 600px) {
+  .todo-list {
+    box-shadow: none;
+  }
+}
