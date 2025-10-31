@@ -30,11 +30,11 @@ ul {
 @keyframes fadeDown {
   from {
     opacity: 0;
-    transform: translateY(-15px); /* start slightly above */
+    transform: translateY(-15px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* end in original position */
+    transform: translateY(0);
   }
 }
 h1 {
